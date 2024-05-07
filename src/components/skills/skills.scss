@@ -8,7 +8,7 @@
    padding-top: 30px;
    font-size: 30px;
    @include mobile{
-       padding-top: 30px;
+       padding-top: 50px;
    }
 }
 
@@ -20,8 +20,55 @@
     margin-top: 50px;
 
     a{
+        z-index: 1;
         text-decoration: none;
         font-family: 'Courier New', Courier, monospace;
+        background-color: #333;
+        border: 1px solid white;
+        padding: 10px;
+        margin-bottom: 10px;
+        display: block;
+        color: white;
+        border-radius: 3px;
+        &:hover{
+            background-color: white;
+            color: black;
+            transition: 0.5s;
+          
+        }
+        @include mobile{
+            font-size: 15px;
+            width: 50%;
+            margin: auto;
+        }
+        li{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 10px;
+            font-size: 9px;
+            font-weight: bold;
+            color: white;
+            @include mobile{
+                font-size: 10px;
+            }
+        }
+        ul{
+            list-style-type: none;
+            padding-left: 0;
+            @include mobile{
+                padding-left: 0;
+            }
+        }
+        p{
+            font-family: 'Dosis', sans-serif;
+            font-weight: 600;
+            font-size: 10px;
+            color: white;
+            @include mobile{
+                font-size: 10px;
+            }
+        
+        }
     }
     
 
@@ -33,15 +80,24 @@
      
     .item{
         li{
-            list-style-type: none;
+            display: flex;
+            flex-direction: column;
             padding-bottom: 10px;
             font-size: 9px;
             font-weight: bold;
             color: white;
             @include mobile{
-                font-size: 15px;
+                font-size: 10px;
             }
         }
+        ul{
+            list-style-type: none;
+            padding-left: 0;
+            @include mobile{
+                padding-left: 0;
+            }
+        }
+        
     }
 
     .development{
@@ -61,7 +117,7 @@
 
         @include mobile{
             margin-right: 0;
-            padding-top: 30px;
+            padding-top: 1px;
         }
         
     }
@@ -86,11 +142,13 @@
             font-family: 'Courier New', Courier, monospace;
             padding-bottom: 20px;
             @include mobile{
-                text-decoration-line: underline;
+              
                 color: white;
                 
             }
         }
+        display: flex;
+        flex-direction: column;
 
         .cplist{
             display: flex;

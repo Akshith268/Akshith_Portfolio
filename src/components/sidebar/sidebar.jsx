@@ -2,7 +2,7 @@ import React from 'react'
 import { Links } from './links/Links'
 import { Togglebutton } from './Togglebutton/Togglebutton'
 import './sidebar.scss'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 import "../home/home.scss"
@@ -10,7 +10,7 @@ import "../home/home.scss"
 export const Sidebar = () => {
 
     const [sidebar, setSidebar] = useState(false)
-    
+    const sidebarRef = React.useRef(null);
 
     const variants={
         open:{
@@ -32,8 +32,25 @@ export const Sidebar = () => {
         }
     }
 
+    
+    useEffect(() => {
+        const handleOutsideClick = (e) => {
+            if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+                setSidebar(false);
+            }
+        };
+
+        if (sidebar) {
+            document.addEventListener('click', handleOutsideClick);
+        }
+
+        return () => {
+            document.removeEventListener('click', handleOutsideClick);
+        };
+    }, [sidebar]);
+
   return (
-    <motion.div className='sidebar' animate={sidebar?"open":"closed"}>
+    <motion.div className='sidebar' ref={sidebarRef} animate={sidebar?"open":"closed"}>
         <motion.div className="bg" variants={variants}>
             <Links/>
         </motion.div>
@@ -41,6 +58,7 @@ export const Sidebar = () => {
         
 
         <Togglebutton setSidebar={setSidebar} sidebar={sidebar}/>
+
     </motion.div>
   )
 }

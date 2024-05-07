@@ -102,28 +102,26 @@ export const Skill = ()=>{
                 <div className='leetcode item'>
                      <a href="https://leetcode.com/Akshith268/">- Leetcode</a>
                      <br />
-                     <ul>
+                     {/* <ul>
                       <li>
                         Problems solved : 158
                       </li>
-                     </ul>
+                     </ul> */}
                 </div>
                 <div className='codechef item'>
                   <a href="https://www.codechef.com/users/akshith_reddy1">- Codechef</a>
                   <br />
-                  <ul>
+                  {/* <ul>
                     <li>
                       problems solved : 100+
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
                 <div className='codeforces item'>
                   <a href="https://codeforces.com/profile/G.Akshith">- Codeforces</a>
                   <br />
                 </div>
-                <div className='hackerrank item'>
-                  <a href="https://www.hackerrank.com/profile/akshith268">- Hackerrank</a>
-                </div>
+          
               </motion.div>
             </motion.div>
 
@@ -131,25 +129,38 @@ export const Skill = ()=>{
                   
               </motion.div>
               <motion.div className='development' variants={textvariants} initial='initial' animate={controls}>
-                <motion.h1>Development</motion.h1>
+                <motion.h1>Development Projects</motion.h1>
                 <motion.div className='devlist' variants={textvariants} initial='initial' animate={controls} >
-                  <div className='react item'>
-                    <a href="">- React</a>
+                  <div className=' item'>
+                    <a href="https://github.com/Akshith268/tailorconnect/tree/main/mern-projects">Tailor Connect
+                      <br />
+                    <p>
+                        A web application for tailors to connect with customers<br />
+                        Technologies used : React, Node, Express, MongoDB,OpenCage
+
+                    </p>
+                      
+                    </a>
+                    <br />
                   </div>
-                  <div className='node item'>
-                    <a href="">- Node</a>
+                  <div className='item'>
+                    <a href="">Portfolio
+                      <br />
+                      <p>My personal portfolio
+                        <br />
+                        Technologies used : React, Framer Motion, Sass
+                      </p>
+                    </a>
                   </div>
-                  <div className='express item'>
-                    <a href="">- Express</a>
-                  </div>
-                  <div className='mongo item'>
-                    <a href="">- MongoDB</a>
-                  </div>
-                  <div>
-                    <a href="">- Git</a>
-                  </div>
-                  <div>
-                    <a href="">- Github</a>
+                  <br />
+                  <div className='item'>
+                    <a href="https://github.com/namanmuktha/co-de-bug">MediSearch
+                      <br />
+                      <p>A MERN-search engine for searching medicines
+                        <br />
+                        Technologies used : Advanced React, Node, Express, 
+                      </p>
+                    </a>
                   </div>
 
                 </motion.div>

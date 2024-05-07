@@ -3,6 +3,7 @@ import './home.scss'
 import { motion } from 'framer-motion'
 import { useState,useEffect } from 'react'
 import { Sidebar } from '../sidebar/sidebar'
+import { MdOutlineSwipeDownAlt } from "react-icons/md";
 
 const textvariants={
   initial:{
@@ -52,17 +53,19 @@ export const Home = () => {
             <motion.div className='firstheading' variants={textvariants}>AKSHITH REDDY</motion.div>
             <motion.div  className='secondheading' variants={textvariants}>Web Developer</motion.div>
             <motion.div variants={textvariants} className='buttons'>
-                 <motion.button variants={textvariants} whileHover={{scale:1.1,cursor:'pointer',background:'white',color:'black'}} className='fbutton'>See my work</motion.button>
-                 <motion.button variants={textvariants} whileHover={{scale:1.1,cursor:'pointer',background:'white',color:'black'}} className='sbutton'>Contact me</motion.button>
+                 <motion.button variants={textvariants} whileHover={{scale:1.1,cursor:'pointer',background:'white',color:'black'}} className='fbutton'><a href="#Skills">See My Work</a></motion.button>
+                 <motion.button variants={textvariants} whileHover={{scale:1.1,cursor:'pointer',background:'white',color:'black'}} className='sbutton'><a href="#Contact">Contact me</a></motion.button>
             </motion.div>
         </motion.div>
+       
       </div>
       <motion.div className='slidingtext' variants={slidevariants} initial="initial" animate="animate">
         FullStack Developer
       </motion.div>
         <div className='image'>
-             <img src="/myimage.jpg" alt="" height={500} width={500} />
+             <img src="/image.png" alt=""/>
         </div>
+
     </div>
   )
 }

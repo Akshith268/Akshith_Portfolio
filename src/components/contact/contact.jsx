@@ -81,14 +81,14 @@ export const Contact=()=>{
 
   return (
     <div className='contact'>
-        <motion.div variants={headingvariant} initial='intial' animate={controls}>
+        <motion.div variants={headingvariant} initial='initial' animate={controls}>
             <h1>
                 
                  CONTACT ME
                 </h1>
                  </motion.div>
         <br />
-        <motion.h2 variants={headingvariant} initial='intial' animate={controls}>Send me a message</motion.h2>
+        <motion.h2 variants={headingvariant} initial='intial' animate={controls}>Send me a message</motion.h2> <br /><br /><br />
         <motion.div className='emailsender' initial='intital' animate='animate'>
          
             <motion.form  ref={formref} onSubmit={sendEmail} variants={textvariants} initial='initial' animate='animate'>
@@ -100,10 +100,22 @@ export const Contact=()=>{
         <br />
         <textarea name="message" id="" cols="30" rows="10" className='message' placeholder='write your message'/>
         <br /><br />
-         <button type='submit' value='Send'>Send Message</button>
+         <button type='submit' value='Send'>Send Message</button><br />
+         <p className='messagestatus'>
          {error && "error"}
-         {success && "success"}
+         {success && "message sent !!"}
+         </p>
+         
             </motion.form>
+            <br />
+            <div className='socialmedia'>
+            <a href="https://www.linkedin.com/in/akshith-reddy-2bbb23220/"><img src="/LinkedIn.png" alt="" /></a>
+            <a href="https://www.instagram.com/akshith2208?igsh=bWF1a2w0bjZtaHd2"><img src="/instagram.png" alt="" /></a>
+            <a href="https://www.facebook.com/profile.php?id=100006999019441&mibextid=ZbWKwL"><img src="/facebook.png" alt="" /></a>
+            <a href="#"><img src="/youtube.png" alt="" /></a>
+
+
+        </div>
         </motion.div>
     </div>
   )

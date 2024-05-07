@@ -9,15 +9,15 @@ export const Navbar = () => {
         <div>
           <Sidebar/>
         </div>
-        <motion.span whileHover={{scale:1.2}} transition={{duration:0.3}}>Akshith Reddy</motion.span>
-        <div className='socialmedia'>
-            <a href=""><img src="/LinkedIn.png" alt="" /></a>
+        {/* <motion.span whileHover={{scale:1.2}} transition={{duration:0.3}}>Akshith Reddy</motion.span> */}
+        {/* <div className='socialmedia'>
+            <a href="/"><img src="/LinkedIn.png" alt="" /></a>
             <a href=""><img src="/instagram.png" alt="" /></a>
             <a href=""><img src="/facebook.png" alt="" /></a>
             <a href=""><img src="/youtube.png" alt="" /></a>
 
 
-        </div>
+        </div> */}
       </div>
     </div>
   )

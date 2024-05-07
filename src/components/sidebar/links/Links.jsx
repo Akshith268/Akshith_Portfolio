@@ -6,7 +6,7 @@ import './Links.scss'
 
 export const Links = () => {
 
-    const items=["Home","About","Skills","Portfolio","Contact"];
+    const items=["Home","About","Skills","Contact"];
     const variants={
         open:{
             transition:{

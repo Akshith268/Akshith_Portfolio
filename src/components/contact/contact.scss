@@ -1,18 +1,29 @@
-
+@import "../../Apps.scss";
 .contact{
   padding-top: 30px;
   font-family: 'Courier New', Courier, monospace;
+  z-index: 1;
+  margin-top: 30%;
+  width: 30%;
+        margin: auto;
+   @include mobile{
+      h1{
+        margin-top: 10%;
+      }
+      width: 100%;
+    }
     .inputtaking{
-        border: 2px solid white;
-        border-radius: 9px;
+        border: 1px solid white;
+        border-radius: 2px;
         padding: 20px;
         background: transparent;
         color: white;
     }
+
     
     button{
         border: 1px solid white;
-        border-radius: 15px;
+        border-radius: 4px;
         background: transparent;
         color: white;
         padding: 10px;
@@ -29,7 +40,7 @@
     
     .emailsender{
         position: relative;
-        padding-top: 100px;
+        
     }
     .message{
         height: 100px;
@@ -41,5 +52,26 @@
     }
     h1{
         font-family: 'Courier New', Courier, monospace;
+    }
+    .socialmedia{
+        width: 30%;
+        display: flex;
+        gap: 20px;
+        margin: auto;
+        margin-left: 25%;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .messagestatus{
+      
+        color: white;
+        border-radius: 4px;
+        padding: 10px;
+        margin-top: 10px;
+
     }
 }
