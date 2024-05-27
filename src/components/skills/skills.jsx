@@ -108,15 +108,6 @@ export const Skill = ()=>{
                       </li>
                      </ul> */}
                 </div>
-                <div className='codechef item'>
-                  <a href="https://www.codechef.com/users/akshith_reddy1">- Codechef</a>
-                  <br />
-                  {/* <ul>
-                    <li>
-                      problems solved : 100+
-                    </li>
-                  </ul> */}
-                </div>
                 <div className='codeforces item'>
                   <a href="https://codeforces.com/profile/G.Akshith">- Codeforces</a>
                   <br />
